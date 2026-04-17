@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 practice2</title>
+</head>
+<body>
+    <h1>Switch Statement</h1>
+
+    <button class="btn btn-info" onclick="teamRank()">Rank</button>
+
+    <script>
+function teamRank() {
+    var rank = "1st";
+    var message = "";
+
+    switch (rank) {
+        case "1st":
+            message = "champions";
+            break;
+
+        case "2nd":
+            message = "2nd placer";
+            break;
+
+        case "3rd":
+            message = "3rd place";
+            break;
+
+        default:
+            message = "Rank undetermined";
+    }
+
+    alert(message);
+}
+</script>
